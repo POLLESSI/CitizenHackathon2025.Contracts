@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36705.20 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CitizenHackathon2025.Contracts", "CitizenHackathon2025.Contracts.csproj", "{C30FF60F-833A-3CEA-5464-DDA590B56AA7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C30FF60F-833A-3CEA-5464-DDA590B56AA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C30FF60F-833A-3CEA-5464-DDA590B56AA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C30FF60F-833A-3CEA-5464-DDA590B56AA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C30FF60F-833A-3CEA-5464-DDA590B56AA7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8EFEB909-C0F0-41FB-AAF7-12D3E54F6F3E}
+	EndGlobalSection
+EndGlobal
