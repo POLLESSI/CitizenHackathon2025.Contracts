@@ -8,33 +8,34 @@ namespace CitizenHackathon2025.Contracts.Hubs
     public static class HubPaths
     {
         // Crowd / affluence
-        public const string CrowdInfo = "/crowdHub";          // => /hubs/crowdHub
+        public const string CrowdInfo = "/hubs/crowdHub";          // => /hubs/crowdHub
 
         // Events
-        public const string Event = "/events";            // => /hubs/events
-
-        // Suggestions / tourisme
-        public const string Suggestion = "/suggestionHub";     // => /hubs/suggestionHub
-
-        // Météo
-        public const string WeatherForecast = "/weatherforecastHub";// => /hubs/weatherforecastHub
-
-        // Trafic
-        public const string TrafficCondition = "/trafficHub";        // => /hubs/trafficHub
-
-        // OutZen global
-        public const string OutZen = "/outzen";            // => /hubs/outzen
-
-        // Utilisateurs
-        public const string User = "/userHub";           // => /hubs/userHub
+        public const string Event = "/hubs/eventHub";            // => /hubs/events
 
         // GPT interactions
-        public const string GptInteraction = "/gptInteractionHub"; // => /hubs/gptInteractionHub
+        public const string GptInteraction = "/hubs/gptHub"; // => /hubs/gptInteractionHub
 
-        // Messages (si tu as un MessageHub / NotificationHub dédié, adapte le nom)
-        public const string Message = "/messageHub";        // => /hubs/messageHub
+        // Messages (If you have a dedicated MessageHub / NotificationHub, adapt the name)
+        public const string Message = "/hubs/messageHub";        // => /hubs/messageHub
 
-        // Lieux (PlaceHub)
-        public const string Place = "/placeHub";          // => /hubs/placeHub
+        // OutZen global
+        public const string OutZen = "/hubs/outzen";            // => /hubs/outzen
+
+        // Place (PlaceHub)
+        public const string Place = "/hubs/placeHub";          // => /hubs/placeHub
+
+        // Suggestions / tourisme
+        public const string Suggestion = "/hubs/suggestionHub";     // => /hubs/suggestionHub
+
+        // Trafic
+        public const string TrafficCondition = "/hubs/trafficHub";        // => /hubs/trafficHub
+
+        // Users
+        public const string User = "/hubs/userHub";           // => /hubs/userHub
+
+        // Weather report
+        public const string WeatherForecast = "/hubs/weatherforecastHub";// => /hubs/weatherforecastHub
+
     }
 }
