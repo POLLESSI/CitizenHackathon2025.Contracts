@@ -9,7 +9,7 @@
         /// Hub path (must match the MapHub on the API side).
         /// Adapt if you use another path (e.g.: "/hubs/weatherForecastHub").
         /// </summary>
-        public const string HubPath = "/hubs/weatherHub";
+        public const string HubPath = "weatherforecastHub";
 
         /// <summary>Events sent by the server to clients.</summary>
         public static class ToClient
@@ -18,13 +18,13 @@
             /// Broadcasting a new weather forecast (payload string/JSON).
             /// Corresponds to: Clients.All.SendAsync("NewWeatherForecast", message)
             /// </summary>
-            public const string NewWeatherForecast = "NewWeatherForecast";
+            public const string ReceiveForecast = "ReceiveForecast";
 
             /// <summary>
             /// Generic notification / message (payload string).
             /// Corresponds to: Clients.All.SendAsync("ReceiveForecast", message)
             /// </summary>
-            public const string ReceiveForecast = "ReceiveForecast";
+            public const string EventArchived = "EventArchived";
         }
 
         /// <summary>Methods invoked by clients on the hub.</summary>
