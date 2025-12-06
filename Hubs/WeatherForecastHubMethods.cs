@@ -6,8 +6,8 @@
     public static class WeatherForecastHubMethods
     {
         /// <summary>
-        /// Hub path (must match the MapHub on the API side).
-        /// Adapt if you use another path (e.g.: "/hubs/weatherForecastHub").
+        /// Hub path (relative, used with app.MapGroup("/hubs")).
+        /// Final URL = {ApiBaseUrl}/hubs/{HubPath}
         /// </summary>
         public const string HubPath = "weatherforecastHub";
 
@@ -15,35 +15,42 @@
         public static class ToClient
         {
             /// <summary>
-            /// Broadcasting a new weather forecast (payload string/JSON).
-            /// Corresponds to: Clients.All.SendAsync("NewWeatherForecast", message)
+            /// Broadcasting a new weather forecast.
+            /// Hub: await Clients.All.SendAsync(WeatherForecastHubMethods.ToClient.ReceiveForecast, dto)
             /// </summary>
             public const string ReceiveForecast = "ReceiveForecast";
 
             /// <summary>
-            /// Generic notification / message (payload string).
-            /// Corresponds to: Clients.All.SendAsync("ReceiveForecast", message)
+            /// Notification that a forecast/event has been archived.
+            /// Hub: await Clients.All.SendAsync(WeatherForecastHubMethods.ToClient.EventArchived, id)
             /// </summary>
             public const string EventArchived = "EventArchived";
+
+            /// <summary>
+            /// Heavy rain alert (payload: RainAlertDTO).
+            /// Hub: await Clients.All.SendAsync(WeatherForecastHubMethods.ToClient.HeavyRainAlert, alert)
+            /// </summary>
+            public const string HeavyRainAlert = "HeavyRainAlert";
         }
 
         /// <summary>Methods invoked by clients on the hub.</summary>
         public static class FromClient
         {
             /// <summary>
-            /// Asks the server to broadcast a new forecast.
-            /// Signature hub: Task RefreshWeatherForecast(string message)
+            /// Ask the server to refresh/broadcast forecasts.
+            /// Hub signature: Task RefreshWeatherForecast(string message)
             /// </summary>
             public const string RefreshWeatherForecast = "RefreshWeatherForecast";
 
             /// <summary>
-            /// Sending a generic notification.
+            /// Send a generic notification.
             /// Hub signature: Task Notify(string message)
             /// </summary>
             public const string Notify = "Notify";
         }
     }
 }
+
 
 
 
