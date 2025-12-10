@@ -9,7 +9,7 @@
         /// <summary>
         /// Hub path. Must match the API's MapHub.
         /// </summary>
-        public const string HubPath = "/hubs/gptHub";
+        public const string HubPath = "gptHub";
 
         /// <summary>
         /// Events sent by the server to clients.

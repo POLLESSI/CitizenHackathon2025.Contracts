@@ -14,7 +14,7 @@ namespace CitizenHackathon2025.Contracts.Hubs
         public const string Event = "eventHub";            // => /hubs/events
 
         // GPT interactions
-        public const string GptInteraction = "gptHub"; // => /hubs/gptInteractionHub
+        public const string GptInteraction = GptInteractionHubMethods.HubPath; // => /hubs/gptInteractionHub
 
         // Messages (If you have a dedicated MessageHub / NotificationHub, adapt the name)
         public const string Message = "messageHub";        // => /hubs/messageHub
@@ -39,3 +39,93 @@ namespace CitizenHackathon2025.Contracts.Hubs
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*// Copyrigtht (c) 2025 Citizen Hackathon https://github.com/POLLESSI/Citizenhackathon2025V5.Blazor.Client. All rights reserved.*/
