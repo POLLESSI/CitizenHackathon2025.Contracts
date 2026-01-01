@@ -36,6 +36,12 @@ namespace CitizenHackathon2025.Contracts.Hubs
 
         // Weather report
         public const string WeatherForecast = WeatherForecastHubMethods.HubPath; // "weatherforecastHub"
+        // Antennas
+        public const string Antenna = CrowdInfoAntennaHubMethods.HubPath;
+        // Antenna connections
+        public const string AntennaConnection = CrowdInfoAntennaConnectionHubMethods.HubPath;
+        // IA
+        public const string AISuggestion = AISuggestionHubMethods.HubPath;
 
     }
 }
