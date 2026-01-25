@@ -11,7 +11,7 @@ namespace CitizenHackathon2025.Contracts.Hubs
         public const string CrowdInfo = "crowdHub";          // => /hubs/crowdHub
 
         // Events
-        public const string Event = "eventHub";            // => /hubs/events
+        public const string Event = EventHubMethods.HubPath;         // => /hubs/events
 
         // GPT interactions
         public const string GptInteraction = GptInteractionHubMethods.HubPath; // => /hubs/gptInteractionHub

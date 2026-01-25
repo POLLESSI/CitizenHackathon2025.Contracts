@@ -8,7 +8,7 @@ public static class UpdateHubMethods
     /// Full path to the hub. With your MapGroup("/hubs") + MapHub("/updateHub"),
     /// the final URL = "/hubs/updateHub".
     /// </summary>
-    public const string HubPath = "/hubs/updateHub";
+    public const string HubPath = "updateHub";
 
     /// <summary>Server -> client events (untyped Hub).</summary>
     public static class ToClient

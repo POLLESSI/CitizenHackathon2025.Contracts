@@ -9,7 +9,7 @@ namespace CitizenHackathon2025.Contracts.Hubs
         /// <summary>
         /// Absolute hub path.
         /// </summary>
-        public const string HubPath = "/hubs/messageHub";
+        public const string HubPath = "messageHub";
 
         // =========================
         // Server -> Client

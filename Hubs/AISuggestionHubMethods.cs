@@ -10,7 +10,7 @@ namespace CitizenHackathon2025.Contracts.Hubs
         /// <summary>
         /// Absolute hub path (used by API + Blazor).
         /// </summary>
-        public const string HubPath = "/hubs/ai-suggestion";
+        public const string HubPath = "ai-suggestion";
 
         // =========================
         // Server -> Client

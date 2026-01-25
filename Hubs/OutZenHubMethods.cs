@@ -7,7 +7,7 @@ namespace CitizenHackathon2025.Contracts.Hubs
         /// <summary>
         /// Full path. With MapGroup("/hubs") + MapHub("/outzen") => "/hubs/outzen".
         /// </summary>
-        public const string HubPath = "/hubs/outzen";
+        public const string HubPath = "outzen";
 
         /// <summary>Group agreements.</summary>
         public static class Groups

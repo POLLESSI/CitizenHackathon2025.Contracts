@@ -3,7 +3,7 @@
     public static class CrowdCalendarHubMethods
     {
         // Hub path (used in Program.cs)
-        public const string HubPath = "/hubs/crowd-calendar";
+        public const string HubPath = "crowd-calendar";
 
         // Client-side methods (Receive*)
         public const string ReceiveAdvisory = "ReceiveAdvisory";                 // payload: an opinion

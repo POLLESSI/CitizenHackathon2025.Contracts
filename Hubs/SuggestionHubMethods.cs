@@ -5,7 +5,7 @@ namespace CitizenHackathon2025.Contracts.Hubs
     public static class SuggestionHubMethods
     {
         /// <summary>Hub path (must match the MapHub on the API side).</summary>
-        public const string HubPath = "/hubs/suggestionHub";
+        public const string HubPath = "suggestionHub";
 
         /// <summary>Events sent by the server to clients.</summary>
         public static class ToClient

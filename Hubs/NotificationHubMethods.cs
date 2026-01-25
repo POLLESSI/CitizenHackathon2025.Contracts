@@ -3,7 +3,7 @@
     public static class NotificationHubMethods
     {
         // ✅ bsolute hub path
-        public const string HubPath = "/hubs/notificationHub";
+        public const string HubPath = "notificationHub";
 
         public static class ToClient
         {

@@ -5,7 +5,7 @@
     /// </summary>
     public static class CrowdInfoAntennaConnectionHubMethods
     {
-        public const string HubPath = "/hubs/crowdinfo-antenna-conn";
+        public const string HubPath = "crowdinfo-antenna-conn";
 
         // Groups
         public static string AntennaGroup(int antennaId) => $"antenna:{antennaId}";
@@ -33,6 +33,8 @@
 
             // signature: Task LeaveEvent(int eventId)
             public const string LeaveEvent = "LeaveEvent";
+
+            public const string RequestEventCrowd = "RequestEventCrowd";
 
             // signature: Task Ping(int antennaId, string? deviceIdBase64OrPlain = null)  (optionnel)
             public const string Ping = "Ping";

@@ -11,7 +11,7 @@
         /// In Program.cs: hubs.MapHub<EventHub>(EventHubMethods.HubPath);
         /// => final URL: "/hubs/events"
         /// </summary>
-        public const string HubPath = "events";   // ⚠️ plus "/events" ici, juste "events"
+        public const string HubPath = "events";   
 
         // -------------------------------
         // Calls made by the server to clients

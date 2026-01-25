@@ -7,7 +7,7 @@
     public static class UserHubMethods
     {
         /// <summary>Hub path. Must match the MapHub on the API side.</summary>
-        public const string HubPath = "/hubs/userHub";
+        public const string HubPath = "userHub";
 
         /// <summary>Events sent by the server to clients.</summary>
         public static class ToClient

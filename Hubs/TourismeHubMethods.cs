@@ -10,7 +10,7 @@ namespace CitizenHackathon2025.Contracts.Hubs
         /// Hub path (group /hubs + map "/aisuggestionhub" => "/hubs/aisuggestionhub").
         /// See Program.cs: hubs.MapHub<AISuggestionHub>("/aisuggestionhub");
         /// </summary>
-        public const string HubPath = "/hubs/aisuggestionhub";
+        public const string HubPath = "aisuggestionhub";
 
         /// <summary>Events sent by the server to clients.</summary>
         public static class ToClient

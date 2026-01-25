@@ -9,7 +9,7 @@
         /// <summary>
         /// Hub path (must match API-side mapping: app.MapHub<CrowdHub>("/hubs/crowdHub"))
         /// </summary>
-        public const string HubPath = "/hubs/crowdHub";
+        public const string HubPath = "crowdHub";
         /// <summary>
         /// Calls made by the server to clients (Clients.SendAsync(...))
         /// </summary>
