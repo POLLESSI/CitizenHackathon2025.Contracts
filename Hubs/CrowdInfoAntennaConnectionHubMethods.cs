@@ -5,7 +5,7 @@
     /// </summary>
     public static class CrowdInfoAntennaConnectionHubMethods
     {
-        public const string HubPath = "crowdinfo-antenna-conn";
+        public const string HubPath = "crowdInfoAntennaConnectionHub";
 
         // Groups
         public static string AntennaGroup(int antennaId) => $"antenna:{antennaId}";

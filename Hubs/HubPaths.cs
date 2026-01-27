@@ -10,6 +10,12 @@ namespace CitizenHackathon2025.Contracts.Hubs
         // Crowd / affluence
         public const string CrowdInfo = "crowdHub";          // => /hubs/crowdHub
 
+        // Crowd / affluence - Antennas
+        public const string CrowdInfoAntenna = CrowdInfoAntennaHubMethods.HubPath; // => /hubs/crowdInfoAntennaHub
+
+        // Crowd / affluence - Antenna connections
+        public const string CrowdInfoAntennaConnection = CrowdInfoAntennaConnectionHubMethods.HubPath; // => /hubs/crowdInfoAntennaConnectionHub
+
         // Events
         public const string Event = EventHubMethods.HubPath;         // => /hubs/events
 
