@@ -14,7 +14,7 @@ namespace CitizenHackathon2025.Contracts.Hubs
         public const string CrowdInfoAntenna = CrowdInfoAntennaHubMethods.HubPath; // => /hubs/crowdInfoAntennaHub
 
         // Crowd / affluence - Antenna connections
-        public const string CrowdInfoAntennaConnection = CrowdInfoAntennaConnectionHubMethods.HubPath; // => /hubs/crowdInfoAntennaConnectionHub
+        public const string CrowdInfoAntennaConnection = CrowdInfoAntennaConnectionHubMethods.HubPath; // => /hubs/gptHub
 
         // Events
         public const string Event = EventHubMethods.HubPath;         // => /hubs/events
@@ -26,7 +26,7 @@ namespace CitizenHackathon2025.Contracts.Hubs
         public const string Message = "messageHub";        // => /hubs/messageHub
 
         // OutZen global
-        public const string OutZen = "outzen";            // => /hubs/outzen
+        public const string OutZen = "outzenHub";            // => /hubs/outzen
 
         // Place (PlaceHub)
         public const string Place = "placeHub";          // => /hubs/placeHub
