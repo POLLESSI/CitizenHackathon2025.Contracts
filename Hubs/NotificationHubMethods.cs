@@ -8,13 +8,19 @@
         public static class ToClient
         {
             // xample: adapt to your real events
-            public const string ReceiveNotification = "ReceiveNotification";
+            public const string Notify = "Notify";
+            public const string NotifyUser = "NotifyUser";
+            //public const string ReceiveNotification = "ReceiveNotification";
             public const string ReceiveNotificationBatch = "ReceiveNotificationBatch";
         }
 
         public static class FromClient
         {
             public const string Ping = "Ping";
+            public const string Broadcast = "Broadcast";
+            public const string NotifyUser = "NotifyUser";
+            public const string JoinGroup = "JoinGroup";
+            public const string LeaveGroup = "LeaveGroup";
             public const string Subscribe = "Subscribe";
             public const string Unsubscribe = "Unsubscribe";
         }

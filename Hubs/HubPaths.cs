@@ -1,54 +1,25 @@
 ﻿// CitizenHackathon2025.Contracts/Hubs/HubPaths.cs
 namespace CitizenHackathon2025.Contracts.Hubs
 {
-    /// <summary>
-    /// Client-side hub URLs: *relative* path after "/hubs".
-    /// Used by Blazor to build "https://host/hubs/xxx".
-    /// </summary>
     public static class HubPaths
     {
-        // Crowd / affluence
-        public const string CrowdInfo = "crowdHub";          // => /hubs/crowdHub
+        public const string CrowdInfo = CrowdHubMethods.HubPath;
+        public const string CrowdInfoAntenna = CrowdInfoAntennaHubMethods.HubPath;
+        public const string CrowdInfoAntennaConnection = CrowdInfoAntennaConnectionHubMethods.HubPath;
 
-        // Crowd / affluence - Antennas
-        public const string CrowdInfoAntenna = CrowdInfoAntennaHubMethods.HubPath; // => /hubs/crowdInfoAntennaHub
+        public const string Event = EventHubMethods.HubPath;
+        public const string GptInteraction = GptInteractionHubMethods.HubPath;
+        public const string Message = MessageHubMethods.HubPath;
+        public const string OutZen = OutZenHubMethods.HubPath;
+        public const string Place = PlaceHubMethods.HubPath;
+        public const string Suggestion = SuggestionHubMethods.HubPath;
+        public const string TrafficCondition = TrafficConditionHubMethods.HubPath;
+        public const string User = UserHubMethods.HubPath;
+        public const string WeatherForecast = WeatherForecastHubMethods.HubPath;
 
-        // Crowd / affluence - Antenna connections
-        public const string CrowdInfoAntennaConnection = CrowdInfoAntennaConnectionHubMethods.HubPath; // => /hubs/gptHub
-
-        // Events
-        public const string Event = EventHubMethods.HubPath;         // => /hubs/events
-
-        // GPT interactions
-        public const string GptInteraction = GptInteractionHubMethods.HubPath; // => /hubs/gptInteractionHub
-
-        // Messages (If you have a dedicated MessageHub / NotificationHub, adapt the name)
-        public const string Message = "messageHub";        // => /hubs/messageHub
-
-        // OutZen global
-        public const string OutZen = "outzenHub";            // => /hubs/outzen
-
-        // Place (PlaceHub)
-        public const string Place = "placeHub";          // => /hubs/placeHub
-
-        // Suggestions / tourisme
-        public const string Suggestion = "suggestionHub";     // => /hubs/suggestionHub
-
-        // Trafic
-        public const string TrafficCondition = "trafficHub";        // => /hubs/trafficHub
-
-        // Users
-        public const string User = "userHub";           // => /hubs/userHub
-
-        // Weather report
-        public const string WeatherForecast = WeatherForecastHubMethods.HubPath; // "weatherforecastHub"
-        // Antennas
         public const string Antenna = CrowdInfoAntennaHubMethods.HubPath;
-        // Antenna connections
         public const string AntennaConnection = CrowdInfoAntennaConnectionHubMethods.HubPath;
-        // IA
         public const string AISuggestion = AISuggestionHubMethods.HubPath;
-
     }
 }
 

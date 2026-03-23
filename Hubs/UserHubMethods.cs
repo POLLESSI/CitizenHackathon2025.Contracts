@@ -17,6 +17,7 @@
             /// Corresponds to: Clients.All.SendAsync("UserRegistered", email)
             /// </summary>
             public const string UserRegistered = "UserRegistered";
+            public const string UserUpdated = "UserUpdated";
         }
 
         /// <summary>Methods invoked by clients to the server.</summary>
