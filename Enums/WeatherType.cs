@@ -19,7 +19,7 @@
         Hail = 9,
         Fog = 10,
         Mist = 11,
-        BlackIce = 12, 
+        BlackIce = 12,
 
         Windy = 13,
         Storm = 14,
@@ -33,13 +33,13 @@
         Snowstorm = 21,
         Hailstorm = 22,
         FreezingRain = 23,
-        
+
         Ash = 24,
         VolcanicAsh = 25,
         BurningClouds = 26,
     }
 }
-
+     
 
 
 
