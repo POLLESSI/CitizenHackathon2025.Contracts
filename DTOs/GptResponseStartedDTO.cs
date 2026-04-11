@@ -1,10 +1,13 @@
-﻿namespace CitizenHackathon2025.Contracts.Hubs
+﻿namespace CitizenHackathon2025.Contracts.DTOs
 {
-    public static class ModerationHubMethods
+    public sealed class GptResponseStartedDto
     {
-        public const string HubPath = "moderationHub";
+        public int InteractionId { get; set; }
+        public string RequestId { get; set; } = string.Empty;
     }
 }
+
+
 
 
 
