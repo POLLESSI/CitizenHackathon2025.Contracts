@@ -2,10 +2,10 @@
 {
     public sealed class GptResponseChunkDto
     {
-        public int InteractionId { get; set; }
-        public string RequestId { get; set; } = string.Empty;
-        public string Chunk { get; set; } = string.Empty;
-        public bool IsFinal { get; set; }
+        public int InteractionId { get; init; }
+        public string RequestId { get; init; } = string.Empty;
+        public string Chunk { get; init; } = string.Empty;
+        public bool IsFinal { get; init; }
     }
 }
 

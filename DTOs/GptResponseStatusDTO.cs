@@ -1,10 +1,12 @@
 ﻿namespace CitizenHackathon2025.Contracts.DTOs
 {
-    public sealed class GptResponseStatusDTO
+    public sealed class GptResponseStatusDto
     {
-        public int InteractionId { get; set; }
-        public string RequestId { get; set; } = string.Empty;
-        public string Message { get; set; } = string.Empty;
+        public int InteractionId { get; init; }
+        public string RequestId { get; init; } = string.Empty;
+        public string Status { get; init; } = string.Empty;
+        public string? Message { get; init; }
+        public DateTime TimestampUtc { get; init; }
     }
 }
 

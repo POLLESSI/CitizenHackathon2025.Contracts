@@ -2,8 +2,9 @@
 {
     public sealed class GptResponseStartedDto
     {
-        public int InteractionId { get; set; }
-        public string RequestId { get; set; } = string.Empty;
+        public int InteractionId { get; init; }
+        public string RequestId { get; init; } = string.Empty;
+        public DateTime StartedAtUtc { get; init; }
     }
 }
 
