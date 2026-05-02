@@ -21,6 +21,7 @@
             // Prepare keys for future developments (optional):
             public const string TrafficUpdated = "trafficUpdated";   // ex: payload DTO
             public const string TrafficCleared = "trafficCleared";   // ex: without payload
+            public const string TrafficRefreshRequested = "TrafficRefreshRequested";
         }
 
         /// <summary>Methods invoked by clients on the hub.</summary>

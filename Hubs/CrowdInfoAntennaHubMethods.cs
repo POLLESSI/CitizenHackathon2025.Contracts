@@ -22,7 +22,7 @@
         public static class FromClient
         {
             // signature: Task JoinAntenna(int antennaId)
-            public const string JoinAntenna = "JoinAntenna";
+            public const string JoinAntennas = "JoinAntennas";
 
             // signature: Task LeaveAntenna(int antennaId)
             public const string LeaveAntenna = "LeaveAntenna";
