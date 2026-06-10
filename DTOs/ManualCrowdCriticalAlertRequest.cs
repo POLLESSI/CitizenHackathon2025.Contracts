@@ -5,6 +5,7 @@
         public int PlaceId { get; set; }
         public string? Reason { get; set; }
         public string? Source { get; set; } = "ManualButton";
+        public string? DeviceId { get; set; }
     }
 }
 
