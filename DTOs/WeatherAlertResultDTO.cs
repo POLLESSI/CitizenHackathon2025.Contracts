@@ -8,6 +8,8 @@
 
         public int? WeatherAlertId { get; set; }
         public DateTime? ExpiresAtUtc { get; set; }
+        public int ConfirmationCount { get; set; }
+        public int RequiredCount { get; set; }
     }
 }
 

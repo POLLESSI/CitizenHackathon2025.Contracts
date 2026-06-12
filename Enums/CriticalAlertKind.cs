@@ -1,18 +1,12 @@
 ﻿namespace CitizenHackathon2025.Contracts.Enums
 {
-    public enum CrowdLevelEnum
+    public enum CriticalAlertKind
     {
-        Low = 1,
-        Medium = 2,
-        High = 3,
-        Critical = 4
+        Crowd = 1,
+        Weather = 2,
+        Traffic = 3
     }
 }
-
-
-
-
-
 
 
 
