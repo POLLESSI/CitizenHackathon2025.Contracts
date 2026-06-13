@@ -4,7 +4,8 @@
     {
         Crowd = 1,
         Weather = 2,
-        Traffic = 3
+        Traffic = 3,
+        Disaster = 4
     }
 }
 
