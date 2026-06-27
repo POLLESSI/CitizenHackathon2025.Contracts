@@ -10,6 +10,11 @@
         public int CrowdLevel { get; set; }
         public DateTime Timestamp { get; set; }
 
+        public bool IsManualCriticalAlert { get; set; }
+        public DateTime? ExpiresAtUtc { get; set; }
+        public string? Source { get; set; }
+        public string? Reason { get; set; }
+
     }
 }
 
