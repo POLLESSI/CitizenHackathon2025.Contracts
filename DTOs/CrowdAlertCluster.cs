@@ -13,22 +13,23 @@
 
         public int RiskScore { get; set; }
 
+        public int AlertCount { get; set; }
+
         public int TotalActiveConnections { get; set; }
+
         public int TotalUniqueDevices { get; set; }
 
         public int EstimatedPopulation { get; set; }
 
-        public int AntennaCount { get; set; }
-
-        public List<int> AntennaIds { get; set; } = new();
-        public List<long> AlertIds { get; set; } = new();
-
         public DateTime FirstDetectedAtUtc { get; set; }
+
         public DateTime LastDetectedAtUtc { get; set; }
 
-        public string Status { get; set; } = "PendingValidation";
+        public List<long> AlertIds { get; set; } = new();
 
-        public string Message { get; set; } = "";
+        public List<int> AntennaIds { get; set; } = new();
+
+        public string Status { get; set; } = "Active";
     }
 }
 

@@ -2,17 +2,23 @@
 {
     public sealed class RiskZoneDTO
     {
-        public string ZoneName { get; set; } = "Unknown zone";
-
+        public string ZoneName { get; set; } = "";
         public double Latitude { get; set; }
         public double Longitude { get; set; }
 
         public int RiskScore { get; set; }
+
         public byte Severity { get; set; }
 
-        public int EstimatedPopulation { get; set; }
+        public int ActiveConnections { get; set; }
 
-        public string Status { get; set; } = "PendingValidation";
+        public bool HasCrowdRisk { get; set; }
+        public bool HasWeatherRisk { get; set; }
+        public bool HasTrafficRisk { get; set; }
+        public bool HasEventRisk { get; set; }
+        public bool HasCitizenReports { get; set; }
+
+        public string Recommendation { get; set; } = "";
     }
 }
 
