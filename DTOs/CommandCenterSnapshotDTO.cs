@@ -3,15 +3,11 @@
     public sealed class CommandCenterSnapshotDTO
     {
         public DateTime GeneratedAtUtc { get; set; } = DateTime.UtcNow;
-
         public int GlobalRiskScore { get; set; }
-
         public int CriticalIncidentCount { get; set; }
         public int HighIncidentCount { get; set; }
         public int ModerateIncidentCount { get; set; }
-
         public int TotalActiveConnections { get; set; }
-
         public string Summary { get; set; } = "";
     }
 }

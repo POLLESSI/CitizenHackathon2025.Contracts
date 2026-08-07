@@ -5,9 +5,7 @@ namespace CitizenHackathon2025.Contracts.DTOs
     public sealed class RiskScore
     {
         public int Score { get; set; }
-
         public SeverityLevel Severity { get; set; }
-
         public List<string> Reasons { get; set; } = new();
     }
 }

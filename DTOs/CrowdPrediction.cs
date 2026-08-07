@@ -3,13 +3,9 @@
     public sealed class CrowdPrediction
     {
         public int CurrentConnections { get; set; }
-
         public int PredictedConnections15Minutes { get; set; }
-
         public int PredictedConnections30Minutes { get; set; }
-
         public double GrowthRate { get; set; }
-
         public double Confidence { get; set; }
     }
 }
