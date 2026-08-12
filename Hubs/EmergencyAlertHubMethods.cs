@@ -18,6 +18,14 @@
         public const string EmergencyAlertExpired = nameof(EmergencyAlertExpired);
         public const string EmergencyAlertsRefreshed = nameof(EmergencyAlertsRefreshed);
         public static string AllGroup => "emergency:all";
+
+        public static class ToClient
+        {
+            public const string Upserted = nameof(IEmergencyAlertHubClient.EmergencyAlertUpserted);
+            public const string Cancelled = nameof(IEmergencyAlertHubClient.EmergencyAlertCancelled);
+            public const string Expired = nameof(IEmergencyAlertHubClient.EmergencyAlertExpired);
+            public const string Refreshed = nameof(IEmergencyAlertHubClient.EmergencyAlertsRefreshed);
+        }
         public static string ProvinceGroup(string provinceCode)
         {
             return $"emergency:province:{Normalize(provinceCode)}";

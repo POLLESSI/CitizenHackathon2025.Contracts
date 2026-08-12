@@ -14,6 +14,10 @@
         public bool HasEventRisk { get; set; }
         public bool HasCitizenReports { get; set; }
         public string Recommendation { get; set; } = "";
+        public bool HasOfficialEmergencyRisk { get; set; }
+        public string? EmergencySourceCode { get; set; }
+        public IReadOnlyList<Guid> EmergencyAlertIds { get; set; } = Array.Empty<Guid>();
+        public string? OfficialInstruction { get; set; }
     }
 }
 
