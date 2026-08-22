@@ -4,6 +4,8 @@ namespace CitizenHackathon2025.Contracts.DTOs
 {
     public sealed class CreateMessageRequest
     {
+        public Guid ClientRequestId { get; set; }
+
         [Required]
         [MinLength(1)]
         [MaxLength(2_000)]
