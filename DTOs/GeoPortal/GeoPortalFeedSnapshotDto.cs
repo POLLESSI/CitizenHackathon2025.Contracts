@@ -9,7 +9,6 @@
         public DateTimeOffset GeneratedAtUtc { get; init; }
         public DateTimeOffset? LastSuccessfulSyncUtc { get; init; }
         public string? ErrorMessage { get; init; }
-
         public IReadOnlyList<GeoPortalFeedItemDto> Items { get; init; } = Array.Empty<GeoPortalFeedItemDto>();
         public IReadOnlyList<GeoPortalFeedSourceStatusDto> Sources { get; init; } = Array.Empty<GeoPortalFeedSourceStatusDto>();
     }

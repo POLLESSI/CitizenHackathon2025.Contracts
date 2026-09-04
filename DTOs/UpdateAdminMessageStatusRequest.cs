@@ -3,9 +3,7 @@
     public sealed class UpdateAdminMessageStatusRequest
     {
         public string Status { get; set; } = "";
-
         public string? AdminNote { get; set; }
-
         public string? AssignedTo { get; set; }
     }
 }

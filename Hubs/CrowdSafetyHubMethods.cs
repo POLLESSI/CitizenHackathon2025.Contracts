@@ -3,7 +3,6 @@
     public static class CrowdSafetyHubMethods
     {
         public const string HubPath = "crowdSafetyHub";
-
         public const string AuthorizedGroup = "crowd-safety-authorized";
 
         public static class ToClient
